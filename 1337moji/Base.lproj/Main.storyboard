@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CvX-Ix-rvV">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="sMo-F9-Oac">
+            <objects>
+                <navigationController id="CvX-Ix-rvV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" alpha="0.55000000000000004" contentMode="scaleToFill" barStyle="black" id="sDF-RU-1XV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.46560928840220989" green="0.84662780165683471" blue="0.97889478107801053" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ODS-SZ-xuf" kind="relationship" relationship="rootViewController" id="Qhv-wT-jrh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zb6-9H-Ofl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-72" y="-459"/>
+        </scene>
+        <!--To Install-->
+        <scene sceneID="aGy-td-XvH">
+            <objects>
+                <viewController id="ODS-SZ-xuf" customClass="ViewController" customModule="_337moji" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kwq-Id-CtO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gzo-Yv-2ay"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sdv-rL-gWt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="Steps Label" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmu-Ws-vo6">
+                                <rect key="frame" x="20" y="72" width="560" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="394" id="Rde-PX-ceS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Rde-PX-ceS"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kmu-Ws-vo6" firstAttribute="trailing" secondItem="sdv-rL-gWt" secondAttribute="trailingMargin" id="Jr5-GF-8c4"/>
+                            <constraint firstItem="Gzo-Yv-2ay" firstAttribute="top" secondItem="kmu-Ws-vo6" secondAttribute="bottom" constant="8" symbolic="YES" id="eUZ-UX-K4K"/>
+                            <constraint firstItem="kmu-Ws-vo6" firstAttribute="leading" secondItem="sdv-rL-gWt" secondAttribute="leadingMargin" id="riW-N5-TzA"/>
+                            <constraint firstItem="kmu-Ws-vo6" firstAttribute="top" secondItem="kwq-Id-CtO" secondAttribute="bottom" constant="8" symbolic="YES" id="vzi-wC-QkQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="eUZ-UX-K4K"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="To Install" id="RgT-kg-dxx"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="stepsLabel" destination="kmu-Ws-vo6" id="bC7-KW-3Z1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ewN-5i-aKz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="784" y="-472"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+</document>
