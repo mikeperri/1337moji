@@ -28,21 +28,21 @@ class ViewController: UIViewController {
         // bold "Settings"
         stepsAttributedString.addAttribute(
             NSFontAttributeName,
-            value: UIFont.boldSystemFontOfSize(stepsLabel.font.pointSize),
+            value: UIFont.boldSystemFont(ofSize: stepsLabel.font.pointSize),
             range: NSRange(location: 9, length: 8)
         );
         
         // bold "Add New Keyboard"
         stepsAttributedString.addAttribute(
             NSFontAttributeName,
-            value: UIFont.boldSystemFontOfSize(stepsLabel.font.pointSize),
+            value: UIFont.boldSystemFont(ofSize: stepsLabel.font.pointSize),
             range: NSRange(location: 63, length: 16)
         );
         
         // bold "1337moji"
         stepsAttributedString.addAttribute(
             NSFontAttributeName,
-            value: UIFont.boldSystemFontOfSize(stepsLabel.font.pointSize),
+            value: UIFont.boldSystemFont(ofSize: stepsLabel.font.pointSize),
             range: NSRange(location: 87, length: 9)
         );
         
